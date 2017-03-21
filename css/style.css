@@ -4,6 +4,8 @@
 
 .content p {
     padding: 1em;
+    max-width: 41em;
+    margin: auto;
 }
 
 .doctor {
