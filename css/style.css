@@ -27,7 +27,7 @@
     display: -webkit-flex;
     justify-content: center;
     -webkit-justify-content: center;
-    bottom: 0;
+    /* bottom: 0; */
     overflow: hidden;
 }
 
@@ -92,11 +92,13 @@ ma {
     background: rgb(44, 62, 80);
     width: 100%;
     display: none;
-    padding: auto;
     flex-direction: column;
+    -webkit-flex-direction: column;
     color: white;
     align-items: center;
+    -webkit-align-items: center;
     justify-content: center;
+    -webkit-justify-content: center;
 }
 
 .header {
