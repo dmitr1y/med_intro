@@ -1,22 +1,28 @@
 .content {
     width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
 }
 
 .content p {
     text-align: justify;
-    text-indent: 1em;
     padding: 1em;
     max-width: 41em;
     margin: auto;
 }
 
+.content h3 {
+    padding: 0;
+    margin: 1em 0 0;
+}
+
 .doctor {
     width: 100%;
-    top: 0;
     height: 28em;
     display: flex;
     justify-content: center;
-    left: 0;
+    bottom: 0;
     overflow: hidden;
 }
 
@@ -29,7 +35,6 @@
     font-weight: bold;
     height: 2em;
     display: flex;
-    /* font-size: 1em; */
     border-radius: 0.5em;
     align-items: center;
     justify-content: center;
@@ -38,24 +43,25 @@
     transition: .3s linear;
 }
 
-ma {}
+ma {
+}
 
-.btn:hover{
+.btn:hover {
     color: #ffffff;
     background: #2c3e50;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 #survey {
     position: absolute;
     overflow: hidden;
-    /* padding-right: 0em; */
-    padding-left: 18em;
-    margin-top: 5em;
+    padding-right: 26em;
+    margin-top: 8em;
     height: 6em;
     width: 11em;
 }
 
-#survey h4{
+#survey h4 {
     padding-bottom: 1em;
 }
 
@@ -74,10 +80,10 @@ ma {}
 .footer {
     background: rgb(44, 62, 80);
     width: 100%;
-    height: 5em;
+    display: none;
+    padding: auto;
     flex-direction: column;
     color: white;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -88,6 +94,7 @@ ma {}
     display: flex;
     color: white;
     height: 6em;
+    /* position: fixed; */
     align-items: center;
     justify-content: center;
 }
@@ -96,7 +103,10 @@ body {
     font-family: sans-serif;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
     color: #2C3E52;
+    align-content: space-between;
     margin: 0;
 }
 
@@ -106,4 +116,50 @@ h3, h2, h1, h4 {
 
 .footer h3, h2, h1, h4 {
     margin: 0;
+}
+
+@media only screen and (max-device-width: 800px) {
+    html {
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2em;
+        margin: 0.5em;
+    }
+
+    p {
+
+    }
+
+    #survey h4 {
+        font-size: 2em;
+        padding: 0.23em;
+    }
+
+    .header {
+        height: 10em;
+    }
+
+    .content {
+
+    }
+
+    .content p {
+        font-size: 2em;
+    }
+
+    #survey {
+        width: 18em;
+        padding-right: 26em;
+        height: 23em;
+        margin-top: 4em;
+    }
+
+    .btn {
+        font-size: 2em;
+    }
 }
