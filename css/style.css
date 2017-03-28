@@ -3,11 +3,11 @@
 }
 
 .content p {
-    padding-left: 1em;
-    padding-right: 1em;
-    /* margin: 0; */
     text-align: justify;
     text-indent: 1em;
+    padding: 1em;
+    max-width: 41em;
+    margin: auto;
 }
 
 .doctor {
